@@ -1,0 +1,6 @@
+#catch some data from a website
+import urllib    #in python3.x, urllib and urllib2 are combined in one name: urllib
+r = urllib.request.urlopen('website')    #open the website by urllib.request  
+page = r.read()    #read data
+page = page.decode('utf-8')    #transform data from website
+print (page)    #print out
