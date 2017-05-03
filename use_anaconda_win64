@@ -1,0 +1,5 @@
+#how to install the python package in anaconda or spyder in win64
+open search botton and type in cmd
+find the anaconda installation file path    #my anaconda installed in D:\anacoda, type D: | cd anacoda
+download the biopython http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc4 in computer and move it in D:\anacoda\Scripts\ files
+type pip install 
