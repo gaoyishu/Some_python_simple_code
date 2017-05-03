@@ -1,5 +1,6 @@
 #how to install the python package in anaconda or spyder in win64
 open search botton and type in cmd
 find the anaconda installation file path    #my anaconda installed in D:\anacoda, type D: | cd anacoda
-download the biopython http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc4 in computer and move it in D:\anacoda\Scripts\ files
-type pip install 
+download the biopython file biopython-1.69-cp36-cp36m-win_amd64.whl from web site http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc4 in computer and move it in D:\anacoda\Scripts\ files
+type pip install biopython-1.69-cp36-cp36m-win_amd64.whl in cmd
+#So, you should first have the whl file in Scripts file path, and then get into this path in cmd and type pip install
