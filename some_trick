@@ -1,7 +1,7 @@
 #replace the \n to ',', and combine all the line into one line
 awk '{{printf"%s,",$0}}' 
 #get the line number t oa new file
-sed -n'1-11p' a.file > b.file
+sed -n'1,11p' a.file > b.file
 #print the line number for 1 to lenth(file) in the first colume
 awk '{print NR, $0}' a.file > b.file
 #caculate the mean value of $6 and %7 and print in %8 
