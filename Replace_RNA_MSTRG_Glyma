@@ -1,0 +1,20 @@
+##Extract the MSTRG name and Glyma
+import os
+os.chdir("/Users/sango/Documents/RNA_diff_gene_analysis")
+names_file = open("MSTRG_name.txt","wt")
+with open ("StingTie_merged.gtf", "rt") as sample1:
+    for line1 in sample1:
+        elements = line1.split('"')
+        names_file.write(str(elements[1] + "\t" + elements[3] + "\n"))
+names_file.close()
+
+
+##Remove the line not containing MSTRG in the head of line
+outputfile = open ("MSTRG_name_sortu.txt", "w")
+with open ("MSTRG_name_sort.txt", "rt") as inputfile:
+    for line in inputfile:
+        if line[1:5] == "STRG":
+            outputfile.write(str(line))
+outputfile.close()
+
+##Replace the MSTRG name with the Glyma_name in the RNA_seq file 
