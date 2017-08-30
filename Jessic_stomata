@@ -1,0 +1,11 @@
+import pandas as pd
+
+import numpy as np
+
+import seaborn as sns
+
+sns.set_style("white")
+
+data = pd.read_csv("/Users/yishu/Desktop/Stomata1.csv", sep = ",")
+
+sns.pairplot(data,palette="RdBu",hue="sample")
