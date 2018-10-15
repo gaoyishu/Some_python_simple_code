@@ -1,6 +1,8 @@
 """
 this file is used for facial landmarks by dlib and opencv3.4.3
 python 3.7
+Usage:
+python3.x "/InputFilePath" "OutputFileName"
 """
 
 
@@ -11,8 +13,6 @@ import sys
 import numpy as np
 import json
 
-
-"FILE_NAME is the name of output file within pictures information of 68 points locations"
 
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):
